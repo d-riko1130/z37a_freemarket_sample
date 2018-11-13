@@ -32,6 +32,9 @@
         .owl-stage-outer {
           position: relative;
           overflow: hidden;
+          .owl-stage {
+            position: relative;
+          }
         }
         .owl-item {
           min-height: 1px;
@@ -78,17 +81,12 @@
             position: relative;
             overflow: hidden;
             display: inline-block;
-            width: 25%;
+            width: 24%;
             max-height: 90px;
             opacity: .4;
-            cursor: pointer;
-            .active {
-              opacity: 1;
-              cursor: default;
-            }
-            span {
-              display: none;
-            }
+          }
+          .active {
+            opacity: 1;
           }
         }
       }
@@ -460,7 +458,7 @@
 }
 .items-in-user-profile {
   width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   .items-box-overflow {
     overflow: hidden;
     .items-box-head {
